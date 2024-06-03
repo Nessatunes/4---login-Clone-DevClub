@@ -1,0 +1,145 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-login: #1e1e1e; /*url('./assets/logo-dev.png')*/
+  --bg-color: #1e1e1e;
+}
+body {
+  background-color: var(--bg-color);
+  line-height: 1.5;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.imagem-loguin {
+  width: 50vw;
+  height: 100vh;
+  background-image: var(--bg-login);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: flex-end;
+  padding: bottom 2.5rem;
+  
+}
+.imagem-loguin p {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+
+}
+.imagem-loguin span {
+  color: #e83e8c;
+  font-size: 1rem;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3.25rem 4.75rem;
+}
+.login img {
+  height: 30%;
+  margin-bottom: 30px;
+}
+.formulario-grupo,
+.formulario-grupo input {
+  width: 90%;
+}
+.formulario-grupo label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #e2e2e2;
+  text-align: left;
+}
+.formulario-grupo input {
+  border: none;
+  margin-top: 0.5rem;
+  border-radius: 0.313rem;
+  padding: 0.75rem;
+  outline: none;
+  background-color: #121212;
+  height: initial;
+  font-size: 0.9rem;
+  color: #c1c1c1;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.formulario-grupo input:focus {
+  outline: 0.063rem solid #7c488a;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.checkbox input {
+  margin-right: 1.25rem;
+}
+.checkbox input::before {
+  cursor: pointer;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #121212;
+  border: 0.063rem solid #363739;
+}
+.checkbox label {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  color: #c1c1c1;
+}
+button {
+  border-radius: 2.43rem;
+  min-width: 120px;
+  width: 25%;
+  height: 50px;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background-color: #e83e8c;
+  color: #c1c1c1;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 1.5rem;
+}
+button:hover {
+  background-color: #c1c1c1;
+  color: #e83e8c;
+}
+a {
+  text-decoration: none;
+  color: #c1c1c1;
+  transition: 0.25s;
+}
+a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
+.whats-app {
+  display: flex;
+  flex-direction: right;
+  width: 100px;
+  height: 100px;
+  position: fixed; /* posicao*/
+  right: 0px; /* direita*/
+  bottom: 0px; /* inferior*/
+  margin-right: 1.625rem;
+  margin-bottom: 1.625rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
